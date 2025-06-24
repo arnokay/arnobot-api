@@ -1,3 +1,5 @@
+github.com/arnokay/arnobot-shared v0.1.1-0.20250624095746-84976475cb59 h1:BIfgUSrsWZtMj7CNZzF3fo4w8zD+ZEgfn03bWkG0kIc=
+github.com/arnokay/arnobot-shared v0.1.1-0.20250624095746-84976475cb59/go.mod h1:2GvDL7XQDdYhjn17J+kJ3BsZE8HdSAdAqGsUQYJqpTY=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
