@@ -44,9 +44,6 @@ func (c *PlatformController) Routes(parentGroup *echo.Group) {
 func (c *PlatformController) StartBot(ctx echo.Context) error {
 	var payload data.PlatformToggleBot
 
-	user := appctx.GetUser(ctx.Request().Context())
-	payload.UserID = user.ID
-
 	err := ctx.Bind(&payload)
 	if err != nil {
 		c.logger.DebugContext(ctx.Request().Context(), "cannot bind body", "err", err)
@@ -58,6 +55,9 @@ func (c *PlatformController) StartBot(ctx echo.Context) error {
 		c.logger.DebugContext(ctx.Request().Context(), "failed validation", "err", err)
 		return err
 	}
+
+	user := appctx.GetUser(ctx.Request().Context())
+	payload.UserID = user.ID
 
 	err = c.platformModule.StartBot(ctx.Request().Context(), payload)
 	if err != nil {
@@ -81,6 +81,9 @@ func (c *PlatformController) StopBot(ctx echo.Context) error {
 		c.logger.DebugContext(ctx.Request().Context(), "failed validation", "err", err)
 		return err
 	}
+
+	user := appctx.GetUser(ctx.Request().Context())
+	payload.UserID = user.ID
 
 	err = c.platformModule.StopBot(ctx.Request().Context(), payload)
 	if err != nil {
