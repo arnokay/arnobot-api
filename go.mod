@@ -3,7 +3,7 @@ module github.com/arnokay/arnobot-api
 go 1.24.2
 
 require (
-	github.com/arnokay/arnobot-shared v0.1.1-0.20250624095746-84976475cb59
+	github.com/arnokay/arnobot-shared v0.1.1-0.20250624194712-b9682f2893f8
 	github.com/go-playground/locales v0.14.1
 	github.com/go-playground/universal-translator v0.18.1
 	github.com/go-playground/validator/v10 v10.26.1-0.20250609194840-0e3e2f997385
