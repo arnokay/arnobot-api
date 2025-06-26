@@ -1,19 +1,18 @@
 module github.com/arnokay/arnobot-api
 
-go 1.24.2
+go 1.24.4
 
 require (
-	github.com/arnokay/arnobot-shared v0.1.1-0.20250624194712-b9682f2893f8
-	github.com/go-playground/locales v0.14.1
-	github.com/go-playground/universal-translator v0.18.1
-	github.com/go-playground/validator/v10 v10.26.1-0.20250609194840-0e3e2f997385
+	github.com/arnokay/arnobot-shared v0.1.1-0.20250626184802-101da2b03751
 	github.com/labstack/echo/v4 v4.13.4
 	github.com/nats-io/nats.go v1.43.0
 )
 
 require (
 	github.com/gabriel-vasile/mimetype v1.4.8 // indirect
-	github.com/golang-jwt/jwt/v4 v4.0.0 // indirect
+	github.com/go-playground/locales v0.14.1 // indirect
+	github.com/go-playground/universal-translator v0.18.1 // indirect
+	github.com/go-playground/validator/v10 v10.26.1-0.20250609194840-0e3e2f997385 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
@@ -25,7 +24,6 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/nats-io/nkeys v0.4.11 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
-	github.com/nicklaw5/helix/v2 v2.31.1 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/crypto v0.38.0 // indirect

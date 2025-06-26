@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/arnokay/arnobot-shared/middlewares"
+	"github.com/arnokay/arnobot-shared/validator"
 	"github.com/labstack/echo/v4"
 
 	"github.com/arnokay/arnobot-api/internal/app/config"
-	"github.com/arnokay/arnobot-api/internal/validator"
 )
 
 func (app *application) Start() {
