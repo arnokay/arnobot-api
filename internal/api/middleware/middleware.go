@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"log/slog"
+	
 
 	"github.com/arnokay/arnobot-shared/applog"
 	"github.com/arnokay/arnobot-shared/middlewares"
@@ -10,7 +10,7 @@ import (
 type Middlewares struct {
 	AuthMiddlewares *middlewares.AuthMiddlewares
 
-	logger *slog.Logger
+	logger applog.Logger
 }
 
 func New(

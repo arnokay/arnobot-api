@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"log/slog"
+
 	"os"
 
 	"github.com/arnokay/arnobot-shared/applog"
@@ -23,7 +23,7 @@ import (
 const AppName = "api"
 
 type application struct {
-	logger *slog.Logger
+	logger applog.Logger
 
 	cache     jetstream.KeyValue
 	msgBroker *nats.Conn
@@ -41,7 +41,8 @@ func main() {
 	cfg := config.Load()
 
 	// load logger
-	logger := applog.Init(AppName, os.Stdout, cfg.Global.LogLevel)
+	logger := applog.NewCharmLogger(os.Stdout, AppName, cfg.Global.LogLevel, nil)
+  applog.SetDefault(logger)
 	app.logger = logger
 
 	// load message broker
